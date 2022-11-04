@@ -8,11 +8,11 @@ app = Flask(__name__)
 CORS(app)
 
 """Stage 1 Task"""
-@app.route('/')
+@app.route('/hello')
 def hello_world():
     return {"slackUsername": "standardforever","backend": True,"age": 21 ,"bio": "I am passionate about tech"}
 
-@app.route('/math', methods = ['POST'])
+@app.route('/', methods = ['POST'])
 def calculation():
     result = 0
     """Possible options"""
