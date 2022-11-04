@@ -1,10 +1,17 @@
 from flask import Flask
 from flask import jsonify
+<<<<<<< HEAD
 from flask import request
 
 app = Flask(__name__)
 
 """Stage 1 Task"""
+=======
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app)
+>>>>>>> d2a6a7aa9873acf5b1f8d52273e5cab8f013b765
 @app.route('/')
 def hello_world():
     return {"slackUsername": "standardforever","backend": True,"age": 21 ,"bio": "I am passionate about tech"}
